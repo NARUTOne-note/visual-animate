@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <svg width="500" height="500" viewBox="0 0 500 500">
+    <g id="myface">
+      <circle cx="100" cy="100" r="50" fill="yellow" stroke="black" stroke-width="10" />
+      <!-- 绘制眼睛 -->
+      <circle cx="80" cy="85" r="7" fill="black" />
+      <circle cx="120" cy="85" r="7" fill="black" />
+
+      <!-- 绘制嘴巴 -->
+      <path d="M80 120 Q100 140 120 120" fill="none" stroke="black" stroke-width="8" stroke-linecap="round" />
+    </g>
+    <use xlink:href="#myface" />
+    <use xlink:href="#myface" x="200" />
+    <use xlink:href="#myface" y="200" />
+    <use xlink:href="#myface" x="200" y="200" />
+  </svg>
+</body>
+</html>

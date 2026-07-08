@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <svg width="500" height="500" viewBox="0 0 500 500">
+    <filter id="blur">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+    </filter>
+    <circle cx="170" cy="60" r="50" fill="green" filter="url(#blur)" />
+  </svg>
+</body>
+</html>
